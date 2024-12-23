@@ -43,7 +43,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: aqua;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -65,7 +65,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: rgb(255, 0, 0);
+  color: aqua;
 }
 
 /* --------------- ABOUT ME --------------- */
@@ -117,7 +117,7 @@ nav ul li a:hover::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: aqua;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -136,4 +136,75 @@ nav ul li a:hover::after {
 .tab-contents ul li span {
   color: aqua;
   font-size: 20px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* --------------- EXPERIENCES --------------- */
+
+#experiences {
+  padding: 30px 0;
+}
+
+.experiences-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.experience-item {
+  padding: 10px;
+}
+
+
+/* --------------- PROJECTS --------------- */
+
+#projects{
+  padding: 30px 0;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.projects-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.projects-list i {
+  align-items: center;
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.projects-list h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.projects-list a {
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.projects-list div:hover {
+  background-color: grey;
+  transform: translateY(-10px);
 }

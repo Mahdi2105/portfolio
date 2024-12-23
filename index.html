@@ -1,99 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d0e4ad34df.js" crossorigin="anonymous"></script>
     <title>Mahdi's Portfolio</title>
-</head>
-<body>
-    <div id='header'>
-        <div class="container">
-            <nav>
-                <h1>Mahdi</h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Junior Developer</p>
-                <h1>Hi, Im <span>Mahdi</span> from London</h1>
-            </div>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1>Mahdi's Portfolio</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Junior Developer</p>
+          <h1>Hi, Im <span>Mahdi</span> from London</h1>
         </div>
+      </div>
     </div>
-<!--------------- ABOUT ME --------------->
+
+    <!--------------- ABOUT ME --------------->
+
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>I am an enthusiastic junior developer with a strong troubleshooting acumen, enabling me to craft innovative solutions for technical challenges. My adaptability and critical thinking skills are crucial in addressing complex issues, and I am committed to continuous improvement. Working collaboratively in cross-functional teams, I engage closely with designers, back-end developers, and project managers to deliver high-quality, user-centric solutions. Currently, I am participating in the Northcoders software engineering bootcamp, focusing on the full software development lifecycle. </p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I am an enthusiastic junior developer with a strong
+              troubleshooting acumen, enabling me to craft innovative solutions
+              for technical challenges. My adaptability and critical thinking
+              skills are crucial in addressing complex issues, and I am
+              committed to continuous improvement. Working collaboratively in
+              cross-functional teams, I engage closely with designers, back-end
+              developers, and project managers to deliver high-quality,
+              user-centric solutions. Currently, I am participating in the
+              Northcoders software engineering bootcamp, focusing on the full
+              software development lifecycle.
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
-                    </div>
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>JavaScript</span></li>
-                            <li><span>Python</span></li>
-                            <li><span>HTML</span></li>
-                            <li><span>CSS</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>2024 Northcoders – Professional Development</span><br> 
-                                Participated in a 13-week intensive course designed to provide junior developers with essential skills.
-                                <br>
-                                • Worked on both backend and frontend projects, including creating a simple news app. Users can log in, view articles, vote, post comments, and more. 
-                                <br>
-                                • Backend Project: https://github.com/Mahdi2105/backend-project 
-                                <br>
-                                • Frontend Project: https://github.com/Mahdi2105/frontend-project 
-                                <br>
-                                • Backend API: https://nc-project-0hto.onrender.com/api 
-                                <br>
-                                • Frontend App: https://mahdi-nc-news.netlify.app/articles 
-                            </li>
-                            <li><span>2021 - 2023 Westminster City Council - Apprentice Software Engineer</span> <br>
-                                • Investigated, triaged, and resolved technical issues related to Westminster online services. 
-                                <br>
-                                • Collaborated effectively with the team to complete work efficiently. 
-                                <br>
-                                • Provided feedback and insights to improve services for users. 
-                                <br>
-                                • Conducted unit tests using React Testing Library and Jest to ensure robust code. 
-                                <br>
-                                • Engaged in planning, designing, and implementation to better understand Westminster services. 
-                            </li>
-                            <li><span>2022 Multiverse – Internship - Junior Developer Intern</span> <br>
-                                • Worked on the Candidate Experience team to improve the application process of apprentices. 
-                                <br>
-                                • Ensured web pages aligned with Figma designs. 
-                                <br>
-                                • Resolved issues identified through Datadog to maintain server stability. 
-                                <br>
-                                • Conducted code reviews and provided constructive feedback. 
-                                <br>
-                                • Optimized applications to improve speed and scalability. 
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>JavaScript</span></li>
+                <li><span>Python</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>New City College</span> <br />
+                  Level 3 IT BTEC - D*DD
+                </li>
+                <li>
+                  <span>Mazahirul Uloom Secondary School</span> <br />
+                  Maths - Grade 9 <br />
+                  English Language - Grade 6 <br />
+                  English Literature - Grade 5 <br />
+                  Science (Core) - Grade A <br />
+                  Science (Additional) - Grade A <br />
+                  Religious Education - Grade A
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-</body>
+
+    <!--------------- EXPERIENCE --------------->
+
+    <div id="experiences">
+      <div class="container">
+        <h1 class="sub-title">Experience</h1>
+        <div class="experiences-list">
+          <div class="experience-item">
+            <h2>Northcoders Software Engineering Bootcamp</h2>
+            <br />
+            Participated in a 13-week intensive course designed to provide
+            junior developers with essential skills.
+            <br />
+            • Worked on both backend and frontend projects, including creating a
+            simple news app. Users can log in, view articles, vote, post
+            comments, and more.
+            <br />
+            • Backend Project: https://github.com/Mahdi2105/backend-project
+            <br />
+            • Frontend Project: https://github.com/Mahdi2105/frontend-project
+            <br />
+            • Backend API: https://nc-project-0hto.onrender.com/api
+            <br />
+            • Frontend App: https://mahdi-nc-news.netlify.app/articles
+          </div>
+          <div class="experience-item">
+            <h2>Westminster City Council - Apprentice Developer</h2>
+            <br />
+            • Investigated, triaged, and resolved technical issues related to
+            Westminster online services.
+            <br />
+            • Collaborated effectively with the team to complete work
+            efficiently.
+            <br />
+            • Provided feedback and insights to improve services for users.
+            <br />
+            • Conducted unit tests using React Testing Library and Jest to
+            ensure robust code.
+            <br />
+            • Engaged in planning, designing, and implementation to better
+            understand Westminster services.
+          </div>
+          <div class="experience-item">
+            <h2>Multiverse - Junior Developer Intern</h2>
+            <br />
+            • Worked on the Candidate Experience team to improve the application
+            process of apprentices.
+            <br />
+            • Ensured web pages aligned with Figma designs.
+            <br />
+            • Resolved issues identified through Datadog to maintain server
+            stability.
+            <br />
+            • Conducted code reviews and provided constructive feedback.
+            <br />
+            • Optimized applications to improve speed and scalability.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------- PROJECTS --------------->
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+          <div>
+            <i class="fa-solid fa-plane-arrival"></i>
+            <h2>TravelSync</h2>
+            <p>Created an application to create, manage and track trips with others and create a centralised space for everyone to seamlessly view itinerary details and more.</p>
+            <a href="https://github.com/Mahdi2105/backend-project">View Github Repo</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-newspaper"></i>
+            <h2>NC News App</h2>
+            <p>An Application where users can sign in, create news articles, leave comments, and upvote/downvote articles.</p>
+            <a href="https://github.com/Mahdi2105/frontend-project">View Github Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------- EXPERIENCE --------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+
+          </div>
+          <div class="contact-right">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+  </body>
 </html>
