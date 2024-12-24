@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #080808;
   color: #fff;
@@ -43,7 +47,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: rgb(124, 15, 124);
+  background: #ff004f;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -65,7 +69,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: rgb(65, 27, 73);
+  color: #ff004f;
 }
 
 /* --------------- ABOUT ME --------------- */
@@ -117,7 +121,7 @@ nav ul li a:hover::after {
   content: "";
   width: 0;
   height: 3px;
-  background: rgb(65, 27, 73);
+  background: #ff004f;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -134,7 +138,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: rgb(65, 27, 73);
+  color: #ff004f;
   font-size: 20px;
 }
 
@@ -205,7 +209,7 @@ nav ul li a:hover::after {
 }
 
 .projects-list div:hover {
-  background-color: rgb(65, 27, 73);
+  background-color: #ff004f;
   transform: translateY(-10px);
 }
 
@@ -224,6 +228,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
+  color: #ff004f;
   margin-right: 10px;
   font-size: 20px;
 }
@@ -241,16 +246,16 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-  color: aqua;
+  color: #ff004f;
   transform: translateY(-5px);
 }
 
 .btn {
   display: inline-block;
-  background-color: rgb(65, 27, 73);
+  background-color: #ff004f;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid rgb(65, 27, 73);
+  border: 1px solid #ff004f;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -290,13 +295,82 @@ form btn {
 }
 
 /* --------------- MEDIA QUERIES --------------- */
+nav .fa-solid {
+  display: none;
+}
 
 @media only screen and (max-width: 600px){
+
+  #header {
+    margin-top: 15px;
+  }
   .header-text {
     margin-top: 100%;
     font-size: 16px;
   }
+
   .header-text h1 {
     font-size: 30px;
   }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    height: 100vh;
+    padding-top: 40px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .subtitle {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .about-col-1, .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-col-1 {
+    margin-bottom: 20px;
+  }
+
+  .contact-left, .contact-right {
+    flex-basis: 100%;
+  }
+  .contact-right {
+    margin-bottom: 10px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+}
+
+#msg{
+  color: #61b752;
+  display: block;
 }
